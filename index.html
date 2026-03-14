@@ -2,59 +2,146 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-    <title>Портфолио Junior верстальщика</title>
+    <title>Анна Аслан — психолог</title>
   </head>
 
   <body>
     <header class="page-header">
-      <div class="container">
-      <a class="header-email" href= 'mailto:maa-g@mail.ru'> email: maa-g@mail.ru </a>
-      <a class="header-phone" href="tel:+74955555555"> tel: 555-55-55 </a>
-    </div>
-  </header>
-
-    <section class="hero-image">
-    <div class="container">
-        <h1 class="heading">Анна Аслан</h1>
-      <p>Junior верстальщик</p>
-    </div>
-    </section>
-
-    <section class="intro">
-<div class="container">
-      <h2 class="subheading">Часть про знакомство</h2>
-      <figure class="user-image">
-  <img src="files/user.jpg" width="928" height="536" alt="Фотография Неопознанного Енота">
-</figure>
-      <h3>Пара слов о себе</h3>
-      <p>Текст с парой слов о себе.</p>
-      <h3>Чем могу быть полезен</h3>
-      <p>Текст о том, чем могу быть полезен.</p>
+      <div class="container header-row">
+        <a class="logo" href="#top">aslan</a>
+        <nav class="main-nav">
+          <a href="#reviews">Отзывы</a>
+          <a href="#education">Образование</a>
+          <a href="#services">Услуги</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="Telegram">◉</a>
+          <a href="#" aria-label="WhatsApp">◍</a>
+          <a href="mailto:hello@annapsy.ru" aria-label="Email">✉</a>
+        </div>
       </div>
-    </section>
+       </header>
+      
+  <main>
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <img class="hero-photo" src="files/user.jpg" alt="Психолог Анна Аслан">
+          <div class="hero-content">
+            <h1>Анна Аслан</h1>
+            <p class="hero-subtitle">Практикующий дипломированный психолог</p>
+            <p>Здравствуйте. Я помогаю справиться с тревогой, выгоранием и переживаниями, которые мешают жить спокойно и уверенно.</p>
+            <p>В работе использую методы когнитивно-поведенческой и схема-терапии. Мы бережно разберём вашу ситуацию и найдём шаги, которые действительно работают в жизни.</p>
+            <div class="hero-actions">
+              <a class="button" href="#services">Подробнее</a>
+              <a class="button button-light" href="#contacts">Записаться</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="portfolio">
-      <div class="container">
-        <h2 class="subheading">Мои работы</h2>
-        <figure class="project-image">
-          <img src="files/project.jpg" width="928" height="536" alt="Cайт инструктора Кекса">
-        </figure>
-      <h3>Сайт инструктора Кекса</h3>
-      <a class="button" href="source/project/index.html">Открыть страницу</a>
-      <p>Небольшой лендинг о школе для начинающих.</p>
+      <section class="metrics">
+        <div class="container metrics-grid">
+          <article class="metric-card">
+            <div class="metric-icon">◫</div>
+            <h2>5</h2>
+            <p>Лет работы в психологии</p>
+          </article>
+          <article class="metric-card">
+            <div class="metric-icon">◉</div>
+            <h2>27</h2>
+            <p>Клиентов, прошедших терапию</p>
+          </article>
+          <article class="metric-card">
+            <div class="metric-icon">↗</div>
+            <h2>999</h2>
+            <p>Часов регулярной личной терапии</p>
+          </article>
+        </div>
+      </section>
 
-      <h3>Блог начинающего верстальщика</h3>
-      <p>Статический блог про обучение HTML и CSS.</p>
-      </div>
-    </section>
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <h2 class="section-title">Отзывы</h2>
+          <div class="reviews-grid">
+            <article>
+              <p>«После нескольких встреч стало гораздо легче справляться с тревогой. Появилась ясность и ощущение опоры».</p>
+              <span>06 июня 2023</span>
+            </article>
+            <article>
+              <p>«Очень бережный и профессиональный подход. Получилось разобрать давний запрос, который не удавалось решить годами».</p>
+              <span>21 ноября 2023</span>
+            </article>
+            <article>
+              <p>«На сессиях спокойно и безопасно. Нравится, что есть структура и понятные шаги между встречами».</p>
+              <span>10 марта 2024</span>
+            </article>
+          </div>
+          <a class="button" href="#contacts">Написать отзыв</a>
+        </div>
+      </section>
+
+      <section class="education" id="education">
+        <div class="container">
+          <h2 class="section-title">Образование</h2>
+          <div class="education-grid">
+            <img src="files/project.jpg" alt="Сертификат 1">
+            <img src="files/project.jpg" alt="Сертификат 2">
+            <img src="files/project.jpg" alt="Сертификат 3">
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container services-content">
+          <h2 class="section-title">Услуги</h2>
+          <p>Очная консультация — 3500 рублей</p>
+          <p>Онлайн консультация — 2800 рублей</p>
+          <p>Дистанционный и очный формат консультаций<br>Длительность сессии 60 минут</p>
+          <a class="button button-light" href="#contacts">Связаться</a>
+        </div>
+      </section>
+
+      <section class="literature">
+        <div class="container">
+          <h2 class="section-title">Рекомендуемая литература</h2>
+          <div class="literature-grid">
+            <article class="literature-card" style="background-image: url('files/user.jpg');">
+              <span>Название первой книги</span>
+            </article>
+            <article class="literature-card" style="background-image: url('files/project.jpg');">
+              <span>Название второй книги</span>
+            </article>
+            <article class="literature-card" style="background-image: url('files/user.jpg');">
+              <span>Название третьей книги</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container contacts-wrap">
+          <h2 class="section-title">Связь со мной</h2>
+          <p class="contacts-text">Для записи на консультацию свяжитесь со мной удобным способом:</p>
+          <div class="messengers">
+            <a class="button button-light" href="https://t.me/annapsy">Написать в Telegram</a>
+            <a class="button button-light" href="https://wa.me/79991234567">Написать в WhatsApp</a>
+            <a class="button button-light" href="mailto:hello@annapsy.ru">Написать на Email</a>
+          </div>
+          <p class="contact-line">hello@annapsy.ru · +7 (999) 123-45-67</p>
+        </div>
+      </section>
+    </main>
 
     <footer class="page-footer">
-    <div class="container">
-      <a class="footer-email" href= 'mailto:maa-g@mail.ru'> email: maa-g@mail.ru </a>
-      <a class="footer-phone" href="tel:+74955555555"> tel: 555-55-55 </a>
-        </div>
+      <div class="container">
+        <p>aslan</p>
+        <p>Психолог Анна Аслан</p>
+      </div>
     </footer>
   </body>
 </html>
