@@ -10,18 +10,18 @@
 
   <body>
     <header class="page-header">
-      <div class="container header-row">
-        <a class="logo" href="#top">aslan</a>
+       <div class="container header-row">
+        <a class="logo" href="#top">Анна Аслан</a>
         <nav class="main-nav">
-          <a href="#reviews">Отзывы</a>
+          <a href="#about">Обо мне</a>
           <a href="#education">Образование</a>
           <a href="#services">Услуги</a>
           <a href="#contacts">Контакты</a>
         </nav>
         <div class="social-links">
           <a href="#" aria-label="Instagram">◎</a>
-          <a href="#" aria-label="Telegram">◉</a>
-          <a href="#" aria-label="WhatsApp">◍</a>
+          <a href="https://t.me/annapsy" aria-label="Telegram">◉</a>
+          <a href="https://wa.me/79991234567" aria-label="WhatsApp">◍</a>
           <a href="mailto:hello@annapsy.ru" aria-label="Email">✉</a>
         </div>
       </div>
@@ -30,7 +30,7 @@
   <main>
       <section class="hero" id="top">
         <div class="container hero-grid">
-          <img class="hero-photo" src="files/user.jpg" alt="Психолог Анна Аслан">
+          <img class="hero-photo" src="files/IMG_20240413_173047.jpg" alt="Психолог Анна Аслан">
           <div class="hero-content">
             <h1>Анна Аслан</h1>
             <p class="hero-subtitle">Практикующий дипломированный психолог</p>
@@ -44,54 +44,55 @@
         </div>
       </section>
 
-      <section class="metrics">
-        <div class="container metrics-grid">
-          <article class="metric-card">
-            <div class="metric-icon">◫</div>
-            <h2>5</h2>
-            <p>Лет работы в психологии</p>
-          </article>
-          <article class="metric-card">
-            <div class="metric-icon">◉</div>
-            <h2>27</h2>
-            <p>Клиентов, прошедших терапию</p>
-          </article>
-          <article class="metric-card">
-            <div class="metric-icon">↗</div>
-            <h2>999</h2>
-            <p>Часов регулярной личной терапии</p>
-          </article>
+       <section class="metrics">
+        <div class="container">
+          <h2 class="section-title">С чем я работаю</h2>
+          <div class="metrics-grid">
+            <article class="metric-card">
+              <h3>Тревога и панические атаки</h3>
+            </article>
+            <article class="metric-card">
+              <h3>Эмоциональное выгорание</h3>
+            </article>
+            <article class="metric-card">
+              <h3>Чувство вины и самокритика</h3>
+            </article>
+            <article class="metric-card">
+              <h3>Сложности в отношениях</h3>
+            </article>
+            <article class="metric-card">
+              <h3>Жизненные кризисы</h3>
+            </article>
+            <article class="metric-card">
+              <h3>Переживание утраты</h3>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="reviews" id="reviews">
-        <div class="container">
-          <h2 class="section-title">Отзывы</h2>
-          <div class="reviews-grid">
-            <article>
-              <p>«После нескольких встреч стало гораздо легче справляться с тревогой. Появилась ясность и ощущение опоры».</p>
-              <span>06 июня 2023</span>
-            </article>
-            <article>
-              <p>«Очень бережный и профессиональный подход. Получилось разобрать давний запрос, который не удавалось решить годами».</p>
-              <span>21 ноября 2023</span>
-            </article>
-            <article>
-              <p>«На сессиях спокойно и безопасно. Нравится, что есть структура и понятные шаги между встречами».</p>
-              <span>10 марта 2024</span>
-            </article>
-          </div>
-          <a class="button" href="#contacts">Написать отзыв</a>
+     <section class="about" id="about">
+        <div class="container contacts-wrap">
+          <h2 class="section-title">Обо мне</h2>
+          <p class="about-text">Я помогаю людям проживать сложные периоды бережно и с опорой на доказательные подходы. Для меня важно, чтобы на сессии вы чувствовали безопасность, принятие и ясность. Мы вместе определяем ваш запрос, находим причины текущих трудностей и выстраиваем реалистичный путь к изменениям.</p>
         </div>
       </section>
 
       <section class="education" id="education">
         <div class="container">
           <h2 class="section-title">Образование</h2>
-          <div class="education-grid">
-            <img src="files/project.jpg" alt="Сертификат 1">
-            <img src="files/project.jpg" alt="Сертификат 2">
-            <img src="files/project.jpg" alt="Сертификат 3">
+          <div class="education-carousel" aria-label="Карусель сертификатов">
+            <button class="carousel-btn prev" type="button" aria-label="Предыдущие сертификаты">‹</button>
+            <div class="education-viewport">
+              <div class="education-track">
+                <article class="education-card"><img src="files/project.jpg" alt="Сертификат 1"></article>
+                <article class="education-card"><img src="files/user.jpg" alt="Сертификат 2"></article>
+                <article class="education-card"><img src="files/project.jpg" alt="Сертификат 3"></article>
+                <article class="education-card"><img src="files/user.jpg" alt="Сертификат 4"></article>
+                <article class="education-card"><img src="files/project.jpg" alt="Сертификат 5"></article>
+                <article class="education-card"><img src="files/user.jpg" alt="Сертификат 6"></article>
+              </div>
+            </div>
+            <button class="carousel-btn next" type="button" aria-label="Следующие сертификаты">›</button>
           </div>
         </div>
       </section>
@@ -99,9 +100,8 @@
       <section class="services" id="services">
         <div class="container services-content">
           <h2 class="section-title">Услуги</h2>
-          <p>Очная консультация — 3500 рублей</p>
-          <p>Онлайн консультация — 2800 рублей</p>
-          <p>Дистанционный и очный формат консультаций<br>Длительность сессии 60 минут</p>
+          <p>Онлайн консультация — 4000 рублей</p>
+          <p>Дистанционный формат консультаций в ZOOM<br>Длительность сессии 60 минут</p>
           <a class="button button-light" href="#contacts">Связаться</a>
         </div>
       </section>
@@ -137,11 +137,68 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <a class="floating-cta" href="https://t.me/annapsy" target="_blank" rel="noopener noreferrer">Записаться в Telegram</a>
+
+     <footer class="page-footer">
       <div class="container">
-        <p>aslan</p>
         <p>Психолог Анна Аслан</p>
       </div>
     </footer>
+
+    <script>
+      (() => {
+        const carousel = document.querySelector('.education-carousel');
+        if (!carousel) return;
+
+        const track = carousel.querySelector('.education-track');
+        const cards = Array.from(track.children);
+        const prevBtn = carousel.querySelector('.prev');
+        const nextBtn = carousel.querySelector('.next');
+        const groups = Math.ceil(cards.length / 3);
+        let current = 0;
+        let timer;
+
+        const update = () => {
+          track.style.transform = `translateX(-${current * (100 / groups)}%)`;
+        };
+
+        const goNext = () => {
+          current = (current + 1) % groups;
+          update();
+        };
+
+        const goPrev = () => {
+          current = (current - 1 + groups) % groups;
+          update();
+        };
+
+        const start = () => {
+          timer = setInterval(goNext, 3500);
+        };
+
+        const stop = () => {
+          clearInterval(timer);
+        };
+
+        nextBtn.addEventListener('click', () => {
+          goNext();
+          stop();
+          start();
+        });
+
+        prevBtn.addEventListener('click', () => {
+          goPrev();
+          stop();
+          start();
+        });
+
+        carousel.addEventListener('mouseenter', stop);
+        carousel.addEventListener('mouseleave', start);
+
+        update();
+        start();
+      })();
+    </script>
+
   </body>
 </html>
