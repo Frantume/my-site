@@ -137,68 +137,13 @@
       </section>
     </main>
 
-    <a class="floating-cta" href="https://t.me/annapsy" target="_blank" rel="noopener noreferrer">Записаться в Telegram</a>
+   <a class="floating-cta" href="https://t.me/annapsy" target="_blank" rel="noopener noreferrer">Записаться</a>
 
-     <footer class="page-footer">
+    <footer class="page-footer">
       <div class="container">
         <p>Психолог Анна Аслан</p>
       </div>
     </footer>
-
-    <script>
-      (() => {
-        const carousel = document.querySelector('.education-carousel');
-        if (!carousel) return;
-
-        const track = carousel.querySelector('.education-track');
-        const cards = Array.from(track.children);
-        const prevBtn = carousel.querySelector('.prev');
-        const nextBtn = carousel.querySelector('.next');
-        const groups = Math.ceil(cards.length / 3);
-        let current = 0;
-        let timer;
-
-        const update = () => {
-          track.style.transform = `translateX(-${current * (100 / groups)}%)`;
-        };
-
-        const goNext = () => {
-          current = (current + 1) % groups;
-          update();
-        };
-
-        const goPrev = () => {
-          current = (current - 1 + groups) % groups;
-          update();
-        };
-
-        const start = () => {
-          timer = setInterval(goNext, 3500);
-        };
-
-        const stop = () => {
-          clearInterval(timer);
-        };
-
-        nextBtn.addEventListener('click', () => {
-          goNext();
-          stop();
-          start();
-        });
-
-        prevBtn.addEventListener('click', () => {
-          goPrev();
-          stop();
-          start();
-        });
-
-        carousel.addEventListener('mouseenter', stop);
-        carousel.addEventListener('mouseleave', start);
-
-        update();
-        start();
-      })();
-    </script>
 
   </body>
 </html>
