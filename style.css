@@ -167,8 +167,9 @@ background: #ffffff;
   width: 60px;
   height: 2px;
   background: #9aa685;
-  margin: 1px auto 0;
+  margin: 0 auto;
   border-radius: 2px;
+  transform: translateY(-3px);
 }
 
 
@@ -283,13 +284,6 @@ background: #ffffff;
   text-align: center;
 }
 
-.footer-consent {
-  display: inline-block;
-  margin-top: 8px;
-  color: #ffffff;
-  text-decoration: underline;
-}
-  
 .page-footer {
   text-align: center;
   background: #9eaf86;
@@ -299,6 +293,13 @@ background: #ffffff;
   
 .page-footer p {
   margin: 4px 0;
+}
+
+.footer-consent {
+  display: inline-block;
+  margin-top: 8px;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .floating-cta {
