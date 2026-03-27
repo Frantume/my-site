@@ -167,7 +167,7 @@ background: #ffffff;
   width: 60px;
   height: 2px;
   background: #9aa685;
-  margin: 3px auto 0;
+  margin: 1px auto 0;
   border-radius: 2px;
 }
 
@@ -283,6 +283,13 @@ background: #ffffff;
   text-align: center;
 }
 
+.footer-consent {
+  display: inline-block;
+  margin-top: 8px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+  
 .page-footer {
   text-align: center;
   background: #9eaf86;
