@@ -79,6 +79,7 @@ background: #ffffff;
   width: 100%;
   max-height: 560px;
   object-fit: cover;
+  object-position: top center;
 }
 
 .hero h1 {
@@ -136,17 +137,19 @@ background: #ffffff;
 .metric-card {
   background: #ffffff;
   text-align: center;
-  padding: 32px 20px;
+  min-height: 120px;
+  padding: 24px 18px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.metric-icon {
-  color: #9aa685;
-  font-size: 30px;
-}
-
-.metric-card h2 {
-  margin: 8px 0;
-  font-size: 44px;
+.metric-card h3 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 500;
   color: var(--primary-dark);
 }
 
@@ -157,6 +160,17 @@ background: #ffffff;
   font-size: 48px;
   color: #3e3828;
 }
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #9aa685;
+  margin: 3px auto 0;
+  border-radius: 2px;
+}
+
 
 .reviews,
 .education,
@@ -194,10 +208,11 @@ background: #ffffff;
   gap: 14px;
 }
 
-.education img {
+.education-card img {
   width: 100%;
-  height: 210px;
+  height: 220px;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 .services {
@@ -279,10 +294,30 @@ background: #ffffff;
   margin: 4px 0;
 }
 
+.floating-cta {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: #3f8f7f;
+  color: #ffffff;
+  text-decoration: none;
+   box-shadow: 0 10px 24px rgba(47, 47, 47, 0.22);
+}
+  
+.floating-cta:hover {
+  background: #35786b;
+}
+
 @media (max-width: 980px) {
   .hero-grid,
   .metrics-grid,
-  .reviews-grid,
   .education-grid,
   .literature-grid {
     grid-template-columns: 1fr;
@@ -292,7 +327,7 @@ background: #ffffff;
     display: none;
   }
 
- .hero h1 {
+  .hero h1 {
     font-size: 42px;
   }
 
@@ -302,5 +337,15 @@ background: #ffffff;
 
   .literature-card span {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .floating-cta {
+    right: 12px;
+    bottom: 12px;
+    font-size: 14px;
+    min-height: 44px;
+    padding: 0 14px;
   }
 }
